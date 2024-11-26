@@ -1,0 +1,50 @@
+:root {
+    --color1: #8900e4;
+    --color2: #fa9c17;
+}
+
+html,
+body {
+    background: #ffffff;
+    height: 100%;
+    font-family: 'Helvetica Neue LT W01_41488878', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.controls {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 100px;
+    z-index: 1;
+}
+
+.controls li {
+    opacity: 0.9;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding: 0 30px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    line-height: 40px;
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    background-color: var(--color1);
+    color: #000000;
+}
+
+
+
+.controls li.active {
+    font-size: 0.9rem;
+    background-color: var(--color2);
+    color: #000000; /* 글자 색을 검정색으로 설정 */
+  font-weight: lighter;
+    transform: scale(0.6);
+    z-index: 0;
+}

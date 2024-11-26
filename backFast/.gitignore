@@ -1,0 +1,20 @@
+my_model4.h5
+final_model_with_all.h5
+best_model_11_19ver3.h5
+*.env
+
+# HDF5 모델 파일
+*.h5
+
+# 추가적으로 무시할 수 있는 파일들
+__pycache__/
+*.pyc
+*.pyo
+
+# Python virtual environments
+backFast/myenv/
+
+# Large library files
+*.dll
+*.pyd
+*.lib
